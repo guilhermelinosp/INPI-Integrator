@@ -1,10 +1,15 @@
-﻿namespace INPI
+﻿using INPI.Data;
+
+namespace INPI
 {
     internal class Program
     {
-        static void Main(string[] args)
+        public static void Main()
         {
-            Console.WriteLine("Hello, World!");
+            SqlHelper sqlHelper = new();
+            _ = sqlHelper.Execulte();
+
+
         }
     }
 }
